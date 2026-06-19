@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""Module providing an asynchronous generator."""
+"""Module that defines an asynchronous generator."""
+
 import asyncio
 import random
-from typing import AsyncGenerator
+from typing import Generator
 
 
-async def async_generator() -> AsyncGenerator[float, None, None]:
-    """Yield a random float between 0 and 10, ten times, with 1s delay each."""
+async def async_generator() -> Generator[float, None, None]:
+    """Yield a random float between 0 and 10 every second."""
     for _ in range(10):
         await asyncio.sleep(1)
         yield random.uniform(0, 10)
