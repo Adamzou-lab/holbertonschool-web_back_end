@@ -23,4 +23,4 @@ python3 0-main.py
 
 ## Auteur
 
-Adam (Adamzou-lab), Holberton School.
+Adam (Adamzou-lab).
